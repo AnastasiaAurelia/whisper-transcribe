@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=61"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "whisper-transcribe"
+version = "0.1.0"
+description = "Offline-first CLI that turns audio into timestamped .srt and .txt transcripts with faster-whisper"
+readme = "README.md"
+requires-python = ">=3.9"
+license = {text = "MIT"}
+dependencies = ["faster-whisper>=1.0"]
+
+[project.scripts]
+whisper-transcribe = "whisper_transcribe.cli:main"
+
+[tool.setuptools]
+packages = ["whisper_transcribe"]

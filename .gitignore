@@ -1,0 +1,40 @@
+# Python / virtualenvs
+.venv/
+venv/
+env/
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+.pytest_cache/
+
+# Caches and models
+.cache/
+models/
+*.bin
+*.gguf
+*.onnx
+*.safetensors
+
+# Audio / video inputs
+*.mp3
+*.wav
+*.m4a
+*.flac
+*.ogg
+*.opus
+*.aac
+*.wma
+*.webm
+*.mp4
+*.mkv
+*.mov
+
+# Generated transcripts
+transcripts/
+output/
+*.srt
+*.vtt
+*.txt
+!requirements*.txt
